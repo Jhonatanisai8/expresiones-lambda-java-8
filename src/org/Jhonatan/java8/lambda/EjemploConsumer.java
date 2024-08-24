@@ -9,7 +9,13 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 import org.Jhonatan.java8.lambda.Models.Usuario;
+/*
+Interfaz Consumer<T>
+La interfaz Consumer<T> es una interfaz funcional que acepta un solo argumento y no devuelve ningún valor. Es comúnmente utilizada para realizar operaciones sobre un objeto, como imprimirlo, modificarlo, o guardarlo en una base de datos.
 
+BiConsumer<T, U>:
+Acepta dos argumentos y no devuelve ningún resultado. Ideal para operaciones en pares de valores, como en mapas.
+ */
 public class EjemploConsumer {
     public static void main(String[] args) throws Exception {
         ejemploSupplierUsuario();
@@ -19,7 +25,9 @@ public class EjemploConsumer {
         System.out.println("\n\t=EXPRESIONES LAMBDA: EJEMPLO CONSUNER=");
 
         System.out.println("=EJEMPLO SALUDO=");
-        /* consumimos lo que se pasa por parametro, no retorna */
+        /* consumimos lo que se pasa por parametro, no retorna 
+         * En este ejemplo imprime lo que le pasamos como argumento
+        */
         Consumer<String> consumidor = saludo -> {
             System.out.println(saludo);
         };
@@ -27,7 +35,9 @@ public class EjemploConsumer {
         consumidor.accept("Hola que tal!");
 
         System.out.println("=EJEMPLO FECHA=");
-        /* de tipo date */
+        /* de tipo date 
+         * Formatea la fecha pasada como argumento
+        */
         Consumer<Date> consumidor01 = fecha -> {
             SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
             System.out.println(formato.format(fecha));

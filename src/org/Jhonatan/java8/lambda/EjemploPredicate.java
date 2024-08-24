@@ -1,5 +1,10 @@
 package org.Jhonatan.java8.lambda;
+/*
+La interfaz Predicate<T> representa una función que toma un solo argumento de tipo T y devuelve un booleano (true o false). Es comúnmente utilizada para realizar pruebas o validaciones.
 
+Interfaz BiPredicate<T, U>
+La interfaz BiPredicate<T, U> es similar a Predicate, pero trabaja con dos argumentos en lugar de uno.
+ */
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 

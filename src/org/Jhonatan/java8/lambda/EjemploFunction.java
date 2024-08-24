@@ -1,5 +1,15 @@
 package org.Jhonatan.java8.lambda;
+/*
+La interfaz Function<T, R> es otra de las interfaces funcionales predefinidas en el
+ paquete java.util.function, y es utilizada para representar una función que toma un 
+ argumento de tipo T y devuelve un resultado de tipo R.
 
+
+ La interfaz BiFunction<T, U, R>: es una de las interfaces funcionales predefinidas en Java que se 
+ utiliza para representar una función que acepta dos argumentos de tipos T y U, y devuelve un
+  resultado de tipo R. Es útil cuando necesitas realizar operaciones que involucran dos entradas y 
+  producir un resultado.
+ */
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
